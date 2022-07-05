@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', [\App\Http\Controllers\IndoregionController::class, 'provinsi']);
 
-Route::get('/address', [\App\Http\Controllers\IndoregionController::class, 'provinsi']);
